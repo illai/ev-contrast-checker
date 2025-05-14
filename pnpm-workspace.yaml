@@ -1,0 +1,5 @@
+packages:
+  # Include all packages in direct subdirs of packages/
+  - 'packages/*'
+  # Include demo app
+  - 'demo'
