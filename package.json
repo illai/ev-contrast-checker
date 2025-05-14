@@ -15,8 +15,10 @@
     "color"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --dts --format esm",
+    "dev": "vite",
+    "build": "vite build",
     "test": "jest",
+    "build:tsup": "tsup src/index.ts --dts --format esm",
     "lint": "eslint src/**/*.{ts,tsx}",
     "format": "prettier --write \"src/**/*.{ts,tsx}\"",
     "demo": "vite demo"
@@ -33,8 +35,10 @@
     "@testing-library/react": "^16.3.0",
     "@types/jest": "^29.5.14",
     "@types/react": "^19.1.4",
+    "@types/react-dom": "^19.1.5",
     "@typescript-eslint/eslint-plugin": "^8.32.1",
     "@typescript-eslint/parser": "^8.32.1",
+    "@vitejs/plugin-react": "^4.4.1",
     "eslint": "^9.26.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-prettier": "^5.4.0",
@@ -47,6 +51,7 @@
     "react-dom": "^19.1.0",
     "ts-jest": "^29.3.2",
     "tsup": "^8.4.0",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
   }
 }
