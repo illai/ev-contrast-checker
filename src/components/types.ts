@@ -1,7 +1,15 @@
 import { RGB } from '../security/validators';
 
+/**
+ * Represents the WCAG accessibility compliance levels.
+ * - AA: Minimum level of conformance
+ * - AAA: Enhanced level of conformance
+ */
 export type AccessibilityLevel = 'AA' | 'AAA';
 
+/**
+ * Results of contrast calculations including both WCAG and APCA metrics.
+ */
 export interface ContrastResult {
   wcag: {
     ratio: number;
@@ -17,6 +25,9 @@ export interface ContrastResult {
   };
 }
 
+/**
+ * Props for the ContrastChecker component.
+ */
 export interface ContrastCheckerProps {
   /** Foreground color (text color) in hex format */
   foregroundColor: string;

@@ -7,6 +7,21 @@ import { ContrastCheckerProps, ContrastResult } from './types';
 const DEFAULT_FONT_SIZE = 16;
 const DEFAULT_PREVIEW_TEXT = 'Preview Text';
 
+/**
+ * A React component that checks and displays color contrast compliance with WCAG 2.1 and APCA standards.
+ *
+ * @component
+ * @example
+ * ```tsx
+ * <ContrastChecker
+ *   foregroundColor="#000000"
+ *   backgroundColor="#FFFFFF"
+ *   fontSize={16}
+ *   isBold={false}
+ *   onContrastChange={(result) => console.log(result)}
+ * />
+ * ```
+ */
 export const ContrastChecker: React.FC<ContrastCheckerProps> = ({
   foregroundColor,
   backgroundColor,
